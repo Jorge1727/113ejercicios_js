@@ -1,0 +1,1708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="contenedor">
+            <div class="cabecera">
+                <h1>Ejercicios JavaScript</h1>
+                <img src="./imgs/JavaScript-logo.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navegador contenedor">
+            <a href="./../Ahorcado_js/index.html"><li>Ahorcado</li></a>
+            <a href="./../SopaDeLetras/index.html"><li>Sopa de Letras</li></a>
+        </ul>
+    </nav>
+
+    <main class="contenedor">
+        <div class="texto">
+            <p>- Para todos los ejercicios podremos ver los cambios y el js específico pulsando F12 y ver ya sea la consola o en sources dirigiendonos al .js</p>
+            <br>
+            <p>- A partir del ejercicio 74 los ejercicios son un poco mas específicos(Golf, BlackJack, recursividad, rangos de numeros, Objetos, arrays), y he puesto los más interesantes en negrita.</p>
+        </div>
+
+        <div class="tabla">
+
+            <table class="table table">
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Commentarios</td>
+                        <td><a class="btn btn-success" id="a1" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js1" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>             
+                    </tr>
+
+                            <tr class="collapse table-light" id="js1">
+                                <td colspan="3">
+                                    <h4>Comentario</h4>
+                                    <p>Presionamos tecla F12, Sources, seleccionamos ej1.js y vemos que tenemos el comentario.</p>
+                                    <p style="color: green;">//Esto es un comentario</p>
+                                    <script src="./js/ej1/ej1.js"></script>
+                                </td>
+                            </tr>
+                        
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Variables</td>
+                        <td><a class="btn btn-success" id="a2" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js2" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js2">
+                                <td colspan="3">
+                                    <h4>Variables</h4>
+                                    <p>Siguiendo el mismo paso anterior vemos la variable <i>myName</i></p>
+                                </td>
+                                <script src="./js/ej2/ej2.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Asignación de variable</td>
+                        <td><a class="btn btn-success" id="a3" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js3" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                            <tr class="collapse table-light" id="js3">
+                                <td colspan="3">
+                                    <h4>Asignación de variable</h4>
+                                    <p>Le damos el valor 7 a la variable <i style="color: rgb(84, 84, 255);">a</i></p>
+                                </td>
+                                <script src="./js/ej3/ej3.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Variable igual a otra variable</td>
+                        <td><a class="btn btn-success" id="a4" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js4" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                                <tr class="collapse table-light" id="js4">
+                                    <td colspan="3">
+                                        <h4>Variable igual a otra variable</h4>
+                                        <p>Igualamos <i>b</i> a <i>a</i></p>
+                                    </td>
+                                    <script src="./js/ej4/ej4.js"></script>
+                                </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Var asignación e iniciación en la misma línea</td>
+                        <td><a class="btn btn-success" id="a5" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js5" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                                <tr class="collapse table-light" id="js5">
+                                    <td colspan="3">
+                                        <h4>Var asignación e iniciación en la misma línea</h4>
+                                        <p>var a = 9</p>
+                                        <p id="valueEj5"  style="color: blue;"></p>
+                                    </td>
+                                    <script src="./js/ej5/ej5.js"></script>
+                                </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Variable String con mi Nombre</td>
+                        <td><a class="btn btn-success" id="a6" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js6" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                            <tr class="collapse table-light" id="js6">
+                                <td colspan="3">
+                                    <h4>Variable String con mi Nombre</h4>
+                                    <p>las dos variables quedarían</p>
+                                    <p id="valueEj6"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej6/ej6.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Importancia de los nombres de variables</td>
+                        <td><a class="btn btn-success" id="a7" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js7" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                            <tr class="collapse table-light" id="js7">
+                                <td colspan="3">
+                                    <h4>Importancia de los nombres de variables</h4>
+                                    <p>las tres variables quedarían</p>
+                                    <p id="valueEj7"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej7/ej7.js"></script>
+                            </tr>
+
+
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Cambio de var por let para no sobreescribir variables</td>
+                        <td><a class="btn btn-success" id="a8" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js8" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                            <tr class="collapse table-light" id="js8">
+                                <td colspan="3">
+                                    <h4>Cambio de var por let para no sobreescribir variables</h4>
+                                    <p>Si ponemos solo var sobreescribiriamos la variable, let nos soluciona esto</p>
+                                    <p id="valueEj8"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej8/ej8.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Uso de let y const</td>
+                        <td><a class="btn btn-success" id="a9" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js9" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                            <tr class="collapse table-light" id="js9">
+                                <td colspan="3">
+                                    <h4>Uso de let y const</h4>
+                                    <p>El const no lo podemos volver a cambiar una vez asignado su valor, y el let si.</p>
+                                    <p id="valueEj9"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej9/ej9.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Suma de number</td>
+                        <td><a class="btn btn-success" id="a10" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js10" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+
+                            <tr class="collapse table-light" id="js10">
+                                <td colspan="3">
+                                    <h4>Suma de number</h4>
+                                    <p>Sumaremos la constante sum 10 + 10 y nos devuelve:</p>
+                                    <p id="valueEj10"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej10/ej10.js"></script>
+                            </tr>
+                    
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Resta de number</td>
+                        <td><a class="btn btn-success" id="a11" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js11" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js11">
+                                <td colspan="3">
+                                    <h4>Resta de number</h4>
+                                    <p>Restaremos la constante sum 45 - 33 y nos devuelve:</p>
+                                    <p id="valueEj11"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej11/ej11.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Multiplicación</td>
+                        <td><a class="btn btn-success" id="a12" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js12" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js12">
+                                <td colspan="3">
+                                    <h4>Multiplicación</h4>
+                                    <p>Multiplicamos la const de 8 * 10 y nos da: </p>
+                                    <p id="valueEj12"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej12/ej12.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>División</td>
+                        <td><a class="btn btn-success" id="a13" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js13" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js13">
+                                <td colspan="3">
+                                    <h4>División</h4>
+                                    <p>Dividimos la const de 66 / 33 y nos da: </p>
+                                    <p id="valueEj13"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej13/ej13.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Incremento ++</td>
+                        <td><a class="btn btn-success" id="a14" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js14" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js14">
+                                <td colspan="3">
+                                    <h4>Incremento ++</h4>
+                                    <p>La variable <i>myVar</i> era 87, le hacemos <i>myVar++</i> y nos devuelve:</p>
+                                    <p id="valueEj14"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej14/ej14.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>Decremento --</td>
+                        <td><a class="btn btn-success" id="a15" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js15" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js15">
+                                <td colspan="3">
+                                    <h4>Decremento ++</h4>
+                                    <p>La variable <i>myVar</i> era 11, le hacemos <i>myVar--</i> y nos devuelve:</p>
+                                    <p id="valueEj15"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej15/ej15.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>Decimales</td>
+                        <td><a class="btn btn-success" id="a16" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js16" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js16">
+                                <td colspan="3">
+                                    <h4>Decimales</h4>
+                                    <p>Podemos crear decimales, la const <i>myDecimal</i> tiene el valor:</p>
+                                    <p id="valueEj16"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej16/ej16.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Multiplicación con decimales</td>
+                        <td><a class="btn btn-success" id="a17" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js17" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js17">
+                                <td colspan="3">
+                                    <h4>Multiplicación con decimales</h4>
+                                    <p>Nuestra const product es de  <i>2.0 * 2.5</i>, nos da el resultado de:</p>
+                                    <p id="valueEj17"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej17/ej17.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>División con decimales</td>
+                        <td><a class="btn btn-success" id="a18" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js18" aria-expanded="false" aria-controls="collapseExample">Ver</a></td> 
+                    </tr>
+                            <tr class="collapse table-light" id="js18">
+                                <td colspan="3">
+                                    <h4>División con decimales</h4>
+                                    <p>Nuestra const quotient es de  <i>4.4 / 2.0</i>, nos da el resultado de:</p>
+                                    <p id="valueEj18"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej18/ej18.js"></script>
+                            </tr>
+
+                    <tr>
+                        <th scope="row">19</th>
+                        <td>Resto y módulo</td>
+                        <td><a class="btn btn-success" id="a19" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js19" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js19">
+                                <td colspan="3">
+                                    <h4>Resto y módulo</h4>
+                                    <p>Para obtener el resto de una división utilizamos el operador modulo = <i>%</i>, nuestra cosnt remainder de <i>11 % 3</i> nos devuelve:</p>
+                                    <p id="valueEj19"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej19/ej19.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>Operador +=</td>
+                        <td><a class="btn btn-success" id="a20" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js20" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>    
+                    </tr>
+
+                            <tr class="collapse table-light" id="js20">
+                                <td colspan="3">
+                                    <h4>Operador +=</h4>
+                                    <p>Las variables a, b y c tienen este valor principalmente declarado:</p>
+                                    <p id="valueEj20a"  style="color: blue;"></p>
+                                    <p>Al poner nuestro operador <i>+=</i> a cada uno no iguala el valor anterior y suma el nuevo, en este caso a+=12, b+=9 y c+=7:</p>
+                                    <p id="valueEj20b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej20/ej20.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td>Operador -=</td>
+                        <td><a class="btn btn-success" id="a21" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js21" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js21">
+                                <td colspan="3">
+                                    <h4>Operador -=</h4>
+                                    <p>Las variables a, b y c tienen este valor principalmente declarado:</p>
+                                    <p id="valueEj21a"  style="color: blue;"></p>
+                                    <p>Al poner nuestro operador <i>-=</i> a cada uno no iguala el valor anterior y resta el nuevo, en este caso a-=6, b-=15 y c-=1:</p>
+                                    <p id="valueEj21b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej21/ej21.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">22</th>
+                        <td>Operador *=</td>
+                        <td><a class="btn btn-success" id="a22" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js22" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js22">
+                                <td colspan="3">
+                                    <h4>Operador *=</h4>
+                                    <p>Las variables a, b y c tienen este valor principalmente declarado:</p>
+                                    <p id="valueEj22a"  style="color: blue;"></p>
+                                    <p>Al poner nuestro operador <i>*=</i> a cada uno no iguala el valor anterior y multiplica el nuevo, en este caso a*=5, b*=3 y c*=10:</p>
+                                    <p id="valueEj22b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej22/ej22.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">23</th>
+                        <td>Operador /=</td>
+                        <td><a class="btn btn-success" id="a23" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js23" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js23">
+                                <td colspan="3">
+                                    <h4>Operador /=</h4>
+                                    <p>Las variables a, b y c tienen este valor principalmente declarado:</p>
+                                    <p id="valueEj23a"  style="color: blue;"></p>
+                                    <p>Al poner nuestro operador <i>/=</i> a cada uno no iguala el valor anterior y divide el nuevo, en este caso a/=12, b/=4 y c/=11:</p>
+                                    <p id="valueEj23b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej23/ej23.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">24</th>
+                        <td>Escape de comillas en string</td>
+                        <td><a class="btn btn-success" id="a24" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js24" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js24">
+                                <td colspan="3">
+                                    <h4>Escape de comillas en string</h4>
+                                    <p>Para poder escapar comillas dobles de un str ponemos <i>\</i>. Nuestra const myStr quedaría:</p>
+                                    <p id="valueEj24"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej24/ej24.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">25</th>
+                        <td>Comillas de cadenas con comillas simples</td>
+                        <td><a class="btn btn-success" id="a25" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js25" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js25">
+                                <td colspan="3">
+                                    <h4>Comillas de cadenas con comillas simples</h4>
+                                    <p>Const myStr con comillas dobles con escape \, y myStr2 con comilla simple y sin escape a las comillas dobles.</p>
+                                    <p id="valueEj25a"  style="color: blue;"></p>
+                                    <p id="valueEj25b"  style="color: blue;"></p>
+                                    
+                                </td>
+                                <script src="./js/ej25/ej25.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">26</th>
+                        <td>Secuencias de escape en cadenas</td>
+                        <td><a class="btn btn-success" id="a26" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js26" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js26">
+                                <td colspan="3">
+                                    <h4>Secuencias de escape en cadenas</h4>
+                                    <p>Usamos\n para salto de linea, \t para tabular. En este caso solo valdria para el console log"</p>
+                                    <p id="valueEj26"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej26/ej26.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">27</th>
+                        <td>Concatenación de cadenas con el operador Plus</td>
+                        <td><a class="btn btn-success" id="a27" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js27" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js27">
+                                <td colspan="3">
+                                    <h4>Concatenación de cadenas con el operador Plus</h4>
+                                    <p>Concatenaremos dos cadenas de texto a la const <i>myStr</i> </p>
+                                    <p id="valueEj27"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej27/ej27.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">28</th>
+                        <td>Concatenación de cadenas con el operador operador Más es igual a</td>
+                            <td><a class="btn btn-success" id="a28" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js28" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js28">
+                                <td colspan="3">
+                                    <h4>Concatenación de cadenas con el operador operador Más es igual a</h4>
+                                    <p>Tenemos declarado myStr primero con una cadena de texto y añadimos con el operados += otra.</p>
+                                    <p id="valueEj28"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej28/ej28.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">29</th>
+                        <td>Construccion de str con variables</td>
+                        <td><a class="btn btn-success" id="a29" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js29" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js29">
+                                <td colspan="3">
+                                    <h4>Construccion de str con variables</h4>
+                                    <p>Añadiremos variables a nuestros strings, en este caso a <i>myStr</i> le añadiremos en media la var <i>myName</i>:</p>
+                                    <p id="valueEj29"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej29/ej29.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">30</th>
+                        <td>Anexar variables a cadenas</td>
+                        <td><a class="btn btn-success" id="a30" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js30" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js30">
+                                <td colspan="3">
+                                    <h4>Anexar variables a cadenas</h4>
+                                    <p>A nuestra cadena de texto le añadiremos una variables tambien de tipo string, a <i>myStr</i> le añadimos <i>someAdjective</i>:</p>
+                                    <p id="valueEj30"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej30/ej30.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">31</th>
+                        <td>Encontrar el length del str</td>
+                        <td><a class="btn btn-success" id="a31" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js31" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js31">
+                                <td colspan="3">
+                                    <h4>Encontrar el length del str</h4>
+                                    <p>Sabremos el length de nuestra const <i>lastName</i></p>
+                                    <p id="valueEj31"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej31/ej31.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">32</th>
+                        <td>Utilice la notación de corchetes para encontrar el primer carácter</td>
+                        <td><a class="btn btn-success" id="a32" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js32" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js32">
+                                <td colspan="3">
+                                    <h4>Utilice la notación de corchetes para encontrar el primer carácter</h4>
+                                    <p>De la variable <i>lastName</i> queremos saber el valor de la pos 0, lo hacemos con [ ]:</p>
+                                    <p id="valueEj32"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej32/ej32.js"></script>
+                            </tr>
+                    
+                    <tr>
+                        <th scope="row">33</th>
+                        <td>Comprender la inmutabilidad del str</td>
+                        <td><a class="btn btn-success" id="a33" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js33" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js33">
+                                <td colspan="3">
+                                    <h4>Comprender la inmutabilidad del str</h4>
+                                    <p>La variable <i>myStr</i> empezó siendo Jello world, pero = a otra cádena y nos la cambia</p>
+                                    <p id="valueEj33"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej33/ej33.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">34</th>
+                        <td>Utilice la notación de corchetes para encontrar el enésimo carácter</td>
+                            <td><a class="btn btn-success" id="a34" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js34" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js34">
+                                <td colspan="3">
+                                    <h4>Utilice la notación de corchetes para encontrar el enésimo carácter</h4>
+                                    <p>La tercera posición de nuestra cosnt <i>lastName</i> es mediante corechetes [2]:</p>
+                                    <p id="valueEj34"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej34/ej34.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">35</th>
+                        <td>Utilice la notación de corchetes para encontrar el último carácter</td> 
+                            <td><a class="btn btn-success" id="a35" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js35" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js35">
+                                <td colspan="3">
+                                    <h4>Utilice la notación de corchetes para encontrar el último carácter</h4>
+                                    <p>Y con el length - 1 la ultima posición para la const de lastName <i>lovelace</i> es:</p>
+                                    <p id="valueEj35"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej35/ej35.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">36</th>
+                        <td>Utilice la notación de corchetes para encontrar el enésimo hasta el</td>
+                            <td><a class="btn btn-success" id="a36" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js36" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js36">
+                                <td colspan="3">
+                                    <h4>Utilice la notación de corchetes para encontrar el enésimo hasta el</h4>
+                                    <p>Para saber la penúltima posición pondremos como la ultima [.length - 1], pero esta vez con -2:</p>
+                                    <p id="valueEj36"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej36/ej36.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">37</th>
+                        <td>Palabras en blanco</td>
+                        <td><a class="btn btn-success" id="a37" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js37" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js37">
+                                <td colspan="3">
+                                    <h4>Palabras en blanco</h4>
+                                    <p>Tenemos la variable <i>wordblanks</i> de str y dentro otras variables con asignaciones cada una, y se las añadimos a wordblanks:</p>
+                                    <p id="valueEj37"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej37/ej37.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">38</th>
+                        <td>Almacene varios valores en una variable mediante array</td>
+                        <td><a class="btn btn-success" id="a38" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js38" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js38">
+                                <td colspan="3">
+                                    <h4>Almacene varios valores en una variable mediante array</h4>
+                                    <p>A una variable le podemos dar avrios valores incluso no siendo del mismo tipo mediante un array:</p>
+                                    <p id="valueEj38"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej38/ej38.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">39</th>
+                        <td>Anidar un array dentro de otro array</td>
+                        <td><a class="btn btn-success" id="a39" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js39" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js39">
+                                <td colspan="3">
+                                    <h4>Anidar un array dentro de otro array</h4>
+                                    <p>A nuestro array <i>myArray</i> le anidamos en su posiciones otros arrays:</p>
+                                    <p id="valueEj39"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej39/ej39.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">40</th>
+                        <td>Acceder a data dentro de un array mediante índice</td>
+                        <td><a class="btn btn-success" id="a40" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js40" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js40">
+                                <td colspan="3">
+                                    <h4>Acceder a data dentro de un array mediante índice</h4>
+                                    <p>Accederemos a la data de nuestra var <i>myArray</i> mediante[índice] ne este caso <i>myData[0]</i></p>
+                                    <p id="valueEj40"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej40/ej40.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">41</th>
+                        <td>Modificar datos de Array con índices</td>
+                        <td><a class="btn btn-success" id="a41" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js41" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js41">
+                                <td colspan="3">
+                                    <h4>Modificar datos de Array con índices</h4>
+                                    <p>Accedemos al valor de la psocion 0 de nuestro array que era 18, y la modificamos asignandole un nuevo valor:</p>
+                                    <p id="valueEj41"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej41/ej41.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">42</th>
+                        <td>Acceso a arrays multidimensionales con índices</td>
+                        <td><a class="btn btn-success" id="a42" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js42" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js42">
+                                <td colspan="3">
+                                    <h4>Acceso a arrays multidimensionales con índices</h4>
+                                    <p>Tenemos la var <i>myArray</i> así: <br> [1, 2, 3],<br>
+                                        [4, 5, 6],<br>
+                                        [7, 8, 9],<br>
+                                        [[10, 11, 12], 13, 14] y queremos acceder a la pos [2][1]</p>
+                                    <p id="valueEj42a"  style="color: blue;"></p>
+                                    <p id="valueEj42b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej42/ej42.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">43</th>
+                        <td>Manipular arrays con el método push</td>
+                        <td><a class="btn btn-success" id="a43" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js43" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js43">
+                                <td colspan="3">
+                                    <h4>Manipular arrays con el método push</h4>
+                                    <p>Haciendo push a nuestro array le añadiremos el nuevo valor <i>dog, 3</i></p>
+                                    <p id="valueEj43"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej43/ej43.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">44</th>
+                        <td>Manipular arrays con el método pop</td>
+                        <td><a class="btn btn-success" id="a44" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js44" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js44">
+                                <td colspan="3">
+                                    <h4>Manipular arrays con el método pop</h4>
+                                    <p><i>myArray</i> enmpeiza teniendo este valor: </p>
+                                    <p id="valueEj44a"  style="color: blue;"></p>
+                                    <p>Al hacerle el pop, nos elimina la ultima posicion del arry y nos devuelve el valor eliminado:</p>
+                                    <p id="valueEj44b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej44/ej44.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">45</th>
+                        <td>Manipular arrays con el método shift</td>
+                        <td><a class="btn btn-success" id="a45" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js45" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js45">
+                                <td colspan="3">
+                                    <h4>Manipular arrays con el método shift</h4>
+                                    <p>Igual que el anterior (pop) pero con shift elimina la primera posición:</p>
+                                    <p id="valueEj45"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej45/ej45.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">46</th>
+                        <td>Manipular arrays con el método unshift</td>
+                        <td><a class="btn btn-success" id="a46" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js46" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js46">
+                                <td colspan="3">
+                                    <h4>Manipular arrays con el método unshift</h4>
+                                    <p>Con shift eliminamos a nuestro array:[["John", 23], ["dog", 3]] el primer valor, despues con unshft le añadimos un nuevo valor en la primera posición</p>
+                                    <p id="valueEj46"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej46/ej46.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">47</th>
+                        <td>Crear una lista</td>
+                        <td><a class="btn btn-success" id="a47" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js47" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js47">
+                                <td colspan="3">
+                                    <h4>Crear una lista</h4>
+                                    <p>Creamos una lista mediante un array:</p>
+                                    <p id="valueEj47"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej47/ej47.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">48</th>
+                        <td>Funciones reutilizables</td>
+                        <td><a class="btn btn-success" id="a48" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js48" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js48">
+                                <td colspan="3">
+                                    <h4>Funciones reutilizables</h4>
+                                    <p>Creamos una funcion como <i>function reusableFunction()</i> y despues la llamamos para que se ejecute, en este caso hace un console log:</p>
+                                    <p id="valueEj48"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej48/ej48.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">49</th>
+                        <td>Pasar valores a funciones con argumentos</td>
+                        <td><a class="btn btn-success" id="a49" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js49" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js49">
+                                <td colspan="3">
+                                    <h4>Pasar valores a funciones con argumentos</h4>
+                                    <p>A nuestra funcion <i>functionWithArgs</i> le pasamos parametros 1 y 2 y nos hace la suma:</p>
+                                    <p id="valueEj49"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej49/ej49.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">50</th>
+                        <td>Devolver un valor de una función con Return</td>
+                        <td><a class="btn btn-success" id="a50" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js50" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js50">
+                                <td colspan="3">
+                                    <h4>Devolver un valor de una función con Return</h4>
+                                    <p>En este caso la funicon retorna el numero que le pasemos <i>(2)</i> multiplicado por 5</p>
+                                    <p id="valueEj50"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej50/ej50.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">51</th>
+                        <td>Alcance de variables (Globales) y funciones</td>
+                        <td><a class="btn btn-success" id="a51" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js51" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js51">
+                                <td colspan="3">
+                                    <h4>Alcance de variables (Globales) y funciones</h4>
+                                    <p><i>myGlobal</i> era una const declarada y asignada, y <i>oopsGlobal estaba dentro de una función</i></p>
+                                    <p id="valueEj51"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej51/ej51.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">52</th>
+                        <td>Alcance local y funciones</td>
+                        <td><a class="btn btn-success" id="a52" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js52" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js52">
+                                <td colspan="3">
+                                    <h4>Alcance local y funciones</h4>
+                                    <p>Asignamos nuestra var <i>myVar</i> dentro de nuestra funcion <i>myLocalScope</i> y vemos como si nos imprime todo bien, pero al acabar, no la tenemos mas (Comprobar en el console log, nos da el aviso)</p>
+                                    <p id="valueEj52a"  style="color: blue;"></p>
+                                    <p id="valueEj52b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej52/ej52.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">53</th>
+                        <td>Alcance local y global en funciones</td>
+                        <td><a class="btn btn-success" id="a53" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js53" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js53">
+                                <td colspan="3">
+                                    <h4>Alcance local y global en funciones</h4>
+                                    <p>La primera es una const normal y la segunda es un return de una función:</p>
+                                    <p id="valueEj53a"  style="color: blue;"></p>
+                                    <p id="valueEj53b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej53/ej53.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">54</th>
+                        <td>Descripción del valor indefinido devuelto por una función</td>
+                        <td><a class="btn btn-success" id="a54" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js54" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js54">
+                                <td colspan="3">
+                                    <h4>Descripción del valor indefinido devuelto por una función</h4>
+                                    <p>Primero nuestra var = 0 y le aplicamos una fucnion de añadir 3 y otra de 5 y obtenemos esto:</p>
+                                    <p id="valueEj54a"  style="color: blue;"></p>
+                                    <p id="valueEj54b"  style="color: blue;"></p>
+                                    <p id="valueEj54c"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej54/ej54.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">55</th>
+                        <td>Asignación con un valor devuelto</td>
+                        <td><a class="btn btn-success" id="a55" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js55" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js55">
+                                <td colspan="3">
+                                    <h4>Asignación con un valor devuelto</h4>
+                                    <p>La variable = 0 llamamos a la función y le pasamos el arg: 7, y esta dentro de sum 3 y / 7:</p>
+                                    <p id="valueEj55a"  style="color: blue;"></p>
+                                    <p id="valueEj55b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej55/ej55.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">56</th>
+                        <td>Cola</td>
+                        <td><a class="btn btn-success" id="a56" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js56" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js56">
+                                <td colspan="3">
+                                    <h4>Cola</h4>
+                                    <p>A nuestra función <i>nextLine</i> le añadimos un valor pero se debe eliminar el primero</p>
+                                    <p id="valueEj56a"  style="color: blue;"></p>
+                                    <p id="valueEj56b"  style="color: blue;"></p>
+                                    <p id="valueEj56c"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej56/ej56.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">57</th>
+                        <td>Booleanos</td>
+                        <td><a class="btn btn-success" id="a57" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js57" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js57">
+                                <td colspan="3">
+                                    <h4>Booleanos</h4>
+                                    <p>Hacemos nuestro primer booleano en una función y que retorne true:</p>
+                                    <p id="valueEj57"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej57/ej57.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">58</th>
+                        <td>Condicionales con if</td>
+                        <td><a class="btn btn-success" id="a58" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js58" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js58">
+                                <td colspan="3">
+                                    <h4>Condicionales con if</h4>
+                                    <p>Nos devuelve si la condición se cumple o no, primero le pasaremos <i>true</i> y despues false a la función <i>wasThatTrue</i>:</p>
+                                    <p id="valueEj58a"  style="color: blue;"></p>
+                                    <p id="valueEj58b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej58/ej58.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">59</th>
+                        <td>Comparación con el operador ==</td>
+                        <td><a class="btn btn-success" id="a59" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js59" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js59">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador ==</h4>
+                                    <p>La función <i>testEqual</i> devolverá si es igual o no</p>
+                                    <p id="valueEj59"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej59/ej59.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">60</th>
+                        <td>Comparación con el operador === estrict</td>
+                        <td><a class="btn btn-success" id="a60" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js60" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js60">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador === estrict</h4>
+                                    <p>Debe ser igual incluso en tipo de var le pasamos"7" y deber ser 7</p>
+                                    <p id="valueEj60"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej60/ej60.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">61</th>
+                        <td>Practicar con diferentes valores(estricto)</td>
+                        <td><a class="btn btn-success" id="a61" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js61" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js61">
+                                <td colspan="3">
+                                    <h4>Practicar con diferentes valores(estricto)</h4>
+                                    <p>Le pasamos 10 y "10" por lo cual:</p>
+                                    <p id="valueEj61"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej61/ej61.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">62</th>
+                        <td>Comparación con el operador !=</td>
+                        <td><a class="btn btn-success" id="a62" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js62" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js62">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador !=</h4>
+                                    <p>Significa que es distinto, le pasamos a la funcion 10 y esta dice: != 99, por lo cual:</p>
+                                    <p id="valueEj62"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej62/ej62.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">63</th>
+                        <td>Comparación con el operador !==</td>
+                        <td><a class="btn btn-success" id="a63" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js63" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js63">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador !==</h4>
+                                    <p>Distinto estricto, en este caso de 17 y le pasamos 10:</p>
+                                    <p id="valueEj63"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej63/ej63.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">64</th>
+                        <td>Comparación con el operador ></td>
+                        <td><a class="btn btn-success" id="a64" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js64" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js64">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador ></h4>
+                                    <p>Mayor. A la función le pasamos 10:</p>
+                                    <p id="valueEj64"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej64/ej64.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">65</th>
+                        <td>Comparación con el operador >=</td>
+                        <td><a class="btn btn-success" id="a65" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js65" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js65">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador >=</h4>
+                                    <p>Mayor o igual. Le volvemos a pasar 10 y nos da:</p>
+                                    <p id="valueEj65"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej65/ej65.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">66</th>
+                        <td>Comparación con el operador menor </td>
+                        <td><a class="btn btn-success" id="a66" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js66" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js66">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador menor</h4>
+                                    <p>Menor. Le pasamos a la función 10:</p>
+                                    <p id="valueEj66"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej66/ej66.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">67</th>
+                        <td>Comparación con el operador menor o igual</td>
+                        <td><a class="btn btn-success" id="a67" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js67" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js67">
+                                <td colspan="3">
+                                    <h4>Comparación con el operador menor o igual</h4>
+                                    <p>Menor o igual y a la función le pasamos 10 otra vez:</p>
+                                    <p id="valueEj67"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej67/ej67.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">68</th>
+                        <td>Comparaciones con el operador lógico &&</td>
+                        <td><a class="btn btn-success" id="a68" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js68" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js68">
+                                <td colspan="3">
+                                    <h4>Comparaciones con el operador lógico &&</h4>
+                                    <p>La funcion devuleve si es >= 25 y menor o igual a 50 le pasamos 10</p>
+                                    <p id="valueEj68"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej68/ej68.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">69</th>
+                        <td>Comparaciones con el operador lógico ||</td>
+                        <td><a class="btn btn-success" id="a69" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js69" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js69">
+                                <td colspan="3">
+                                    <h4>Comparaciones con el operador lógico ||</h4>
+                                    <p>La funicón nos dice si el valor que le pasamos es menor a 10 o mayor a 20, en este caso 15:</p>
+                                    <p id="valueEj69"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej69/ej69.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">70</th>
+                        <td>Introducción del else</td>
+                        <td><a class="btn btn-success" id="a70" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js70" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js70">
+                                <td colspan="3">
+                                    <h4>Introducción del else</h4>
+                                    <p>Si no cumple la condicion nos va a hacer otra operacion que le indiquemos: en este caso le pasamos 4:</p>
+                                    <p id="valueEj70"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej70/ej70.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">71</th>
+                        <td>Introducción del else if</td>
+                        <td><a class="btn btn-success" id="a71" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js71" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js71">
+                                <td colspan="3">
+                                    <h4>Introducción del else if</h4>
+                                    <p>Si no cumple la primer condición consultara la siguiente y sino el else final: a la función le pasamos 7:</p>
+                                    <p id="valueEj71"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej71/ej71.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">72</th>
+                        <td>Orden lógico con if else</td>
+                        <td><a class="btn btn-success" id="a72" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js72" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js72">
+                                <td colspan="3">
+                                    <h4>Orden lógico con if else</h4>
+                                    <p>Nos dará un return si esque ya cumple la condición: a la función le pasamos 7 otra vez</p>
+                                    <p id="valueEj72"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej72/ej72.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">73</th>
+                        <td>Encadenamiento de if else</td>
+                        <td><a class="btn btn-success" id="a73" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js73" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js73">
+                                <td colspan="3">
+                                    <h4>Encadenamiento de if else</h4>
+                                    <p>Aplicaremos encadenamiento mas orden logico: a la función <i>testSize</i> le pasamos 12</p>
+                                    <p id="valueEj73"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej73/ej73.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">74</th>
+                        <td>Golf Code</td>
+                        <td><a class="btn btn-success" id="a74" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js74" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js74">
+                                <td colspan="3">
+                                    <h4>Golf Code</h4>
+                                    <p>Según sus tiros y su par nos dara la puntuación hecha en el golf, en este caso a la funcion le daremos par 5 y tiros 4:</p>
+                                    <p id="valueEj74"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej74/ej74.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">75</th>
+                        <td>Switch</td>
+                        <td><a class="btn btn-success" id="a75" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js75" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js75">
+                                <td colspan="3">
+                                    <h4>Switch</h4>
+                                    <p>Tenemos esto: <br> switch (val) {
+                                        case 1:
+                                          answer = "alpha";
+                                          break;
+                                        case 2:
+                                          answer = "beta";
+                                          break;
+                                          case 3:
+                                        answer = "gamma";
+                                          break;
+                                          case 4:
+                                        answer = "delta";
+                                          break;} <br> Dependiendo de que caso ocurra hará alguna función u otra: en este caso le pasamos 2:</p>
+                                    <p id="valueEj75"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej75/ej75.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">76</th>
+                        <td>Switch con default</td>
+                        <td><a class="btn btn-success" id="a76" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js76" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js76">
+                                <td colspan="3">
+                                    <h4>Switch con default</h4>
+                                    <p>En el switch si no cumple ningun caso hará el default: primero le pasamos "a" y despues 5</p>
+                                    <p id="valueEj76a"  style="color: blue;"></p>
+                                    <p id="valueEj76b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej76/ej76.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">77</th>
+                        <td>Multiples opciones identicas con switch</td>
+                        <td><a class="btn btn-success" id="a77" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js77" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js77">
+                                <td colspan="3">
+                                    <h4>Multiples opciones identicas con switch</h4>
+                                    <p>En varios casos dará el mismo resultado: a la función le hemos pasado 2:</p>
+                                    <p id="valueEj77"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej77/ej77.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">78</th>
+                        <td>Remplazo de cadenas if else por switch</td>
+                        <td><a class="btn btn-success" id="a78" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js78" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js78">
+                                <td colspan="3">
+                                    <h4>Remplazo de cadenas if else por switch</h4>
+                                    <p>Nuestro switch es así : <br>switch(val){
+                                        case "bob":
+                                            answer = "Marley";
+                                            break;
+                                        case 42:
+                                            answer = "The Answer";
+                                            break;
+                                        case 1:
+                                            answer = "There is no #1";
+                                            break;
+                                        case 99:
+                                            answer = "Missed me by this much!";
+                                            break;
+                                        case 7:
+                                            answer = "Ate Nine";
+                                            break;
+                                        }
+                                        return answer;
+                                
+                                        <br>
+                                        Y le pasamos el parametro de <i>7</i>:
+                                   </p>
+                                    <p id="valueEj78"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej78/ej78.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">79</th>
+                        <td>Devolver valor de booleanos como resultado</td>
+                        <td><a class="btn btn-success" id="a79" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js79" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js79">
+                                <td colspan="3">
+                                    <h4>Devolver valor de booleanos como resultado</h4>
+                                    <p>A la función isLess le pasamos 10 y 15 y nos dice si 10 es menor al segundo param:</p>
+                                    <p id="valueEj79"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej79/ej79.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">80</th>
+                        <td>Devolver patrón anticipado para funciones</td>
+                        <td><a class="btn btn-success" id="a80" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js80" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js80">
+                                <td colspan="3">
+                                    <h4>Devolver patrón anticipado para funciones</h4>
+                                    <p>Nos hace una comprobación previa antes de relizar la operacíon: 1º le pasamos numeros + y despues a uno le damos un -:</p>
+                                    <p id="valueEj80a"  style="color: blue;"></p>
+                                    <p id="valueEj80b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej80/ej80.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">81</th>
+                        <td>BlackJack conteo de cartas</td>
+                        <td><a class="btn btn-success" id="a81" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js81" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js81">
+                                <td colspan="3">
+                                    <h4>BlackJack</h4>
+                                    <p>Segun las reglas del BlackJack aplicamos nuestra funcion <i>cc</i> en este caso le pasamos 4</p>
+                                    <p id="valueEj81"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej81/ej81.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">82</th>
+                        <td>Objetos con JS</td>
+                        <td><a class="btn btn-success" id="a82" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js82" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js82">
+                                <td colspan="3">
+                                    <h4>Objetos con JS</h4>
+                                    <p>Para hacer objetos utilizamos {}. Nuestro objeto <i>myDog</i> es:</p>
+                                    <p id="valueEj82"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej82/ej82.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">83</th>
+                        <td>Acceso a propiedades de objetos con el punto</td>
+                        <td><a class="btn btn-success" id="a83" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js83" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js83">
+                                <td colspan="3">
+                                    <h4>Acceso a propiedades de objetos con el punto</h4>
+                                    <p>Accederemos a la propiedad del objeto mediante el punto, primero al hat y posteriormente al shirt</p>
+                                    <p id="valueEj83a"  style="color: blue;"></p>
+                                    <p id="valueEj83b"  style="color: blue;"></p>
+                                    <p id="valueEj83c"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej83/ej83.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">84</th>
+                        <td>Acceso a propiedades de objetos con el []</td>
+                        <td><a class="btn btn-success" id="a84" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js84" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js84">
+                                <td colspan="3">
+                                    <h4>Acceso a propiedades de objetos con el []</h4>
+                                    <p>Ahora accederemos mediante []</p>
+                                    <p id="valueEj84a"  style="color: blue;"></p>
+                                    <p id="valueEj84b"  style="color: blue;"></p>
+                                    <p id="valueEj84c"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej84/ej84.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">85</th>
+                        <td>Acceso a propiedades con variables</td>
+                        <td><a class="btn btn-success" id="a85" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js85" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js85">
+                                <td colspan="3">
+                                    <h4>Acceso a propiedades con variables</h4>
+                                    <p>Asignamos una variable con su valor y después se la pasamos al objeto para que nos de el valor de esa propiedad: en este caso la var = 16</p>
+                                    <p id="valueEj85a"  style="color: blue;"></p>
+                                    <p id="valueEj85b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej85/ej85.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">86</th>
+                        <td>Actualización de propiedades de objetos</td>
+                        <td><a class="btn btn-success" id="a86" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js86" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js86">
+                                <td colspan="3">
+                                    <h4>Actualización de propiedades de objetos</h4>
+                                    <p>Al objeto myDog le cambiaremos el nombre, solo accedemos a el e igualamos:</p>
+                                    <p id="valueEj86a"  style="color: blue;"></p>
+                                    <p id="valueEj86b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej86/ej86.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">87</th>
+                        <td>Agregar nuevas propiedades a un objeto JavaScript</td>
+                        <td><a class="btn btn-success" id="a87" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js87" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js87">
+                                <td colspan="3">
+                                    <h4>Agregar nuevas propiedades a un objeto JavaScript</h4>
+                                    <p>Simplemente la creamos y le damos valor</p>
+                                    <p id="valueEj87a"  style="color: blue;"></p>
+                                    <p id="valueEj87b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej87/ej87.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">88</th>
+                        <td>Borrar propiedades de un objeto</td>
+                        <td><a class="btn btn-success" id="a88" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js88" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js88">
+                                <td colspan="3">
+                                    <h4>Borrar propiedades de un objeto</h4>
+                                    <p>Tan solo pondremos delete y llamamos a la propiedad y listo, en este caso <i>tails</i>:</p>
+                                    <p id="valueEj88a"  style="color: blue;"></p>
+                                    <p id="valueEj88b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej88/ej88.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">89</th>
+                        <td>Usar objetos para búsquedas</td>
+                        <td><a class="btn btn-success" id="a89" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js89" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js89">
+                                <td colspan="3">
+                                    <h4>Usar objetos para búsquedas</h4>
+                                    <p>La función tiene dentro el objeto y mediante el parametro se lo pasamos al objeto para que segun su propiedad nos de su valor: le pasaremos "charlie":</p>
+                                    <p id="valueEj89a"  style="color: blue;"></p>
+                                    <p id="valueEj89b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej89/ej89.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">90</th>
+                        <td>Objetos de prueba para propiedades</td>
+                        <td><a class="btn btn-success" id="a90" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js90" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js90">
+                                <td colspan="3">
+                                    <h4>Objetos de prueba para propiedades</h4>
+                                    <p>Usamos checkOwnProperty para medianteun booleano saber si tiene esa propiedad el objeto: en este caso le pasamos name y raza:</p>
+                                    <p id="valueEj90a"  style="color: blue;"></p>
+                                    <p id="valueEj90b"  style="color: blue;"></p>
+                                    <p id="valueEj90c"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej90/ej90.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">91</th>
+                        <td>Manipulación de objetos complejos</td>
+                        <td><a class="btn btn-success" id="a91" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js91" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js91">
+                                <td colspan="3">
+                                    <h4>Manipulación de objetos complejos</h4>
+                                    <p>Accederemos a los objeto y a los valores de sus propiedades:</p>
+                                    <p id="valueEj91a"  style="color: blue;"></p>
+                                    <p>Objeto 1:</p>
+                                    <p id="valueEj91b"  style="color: blue;"></p>
+                                    <p>Objeto 2</p>
+                                    <p id="valueEj91c"  style="color: blue;"></p>
+                                    <p>Objeto 2 y su propiedad "artist"</p>
+                                    <p id="valueEj91d"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej91/ej91.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">92</th>
+                        <td>Accediendo a objetos anidados</td>
+                        <td><a class="btn btn-success" id="a92" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js92" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js92">
+                                <td colspan="3">
+                                    <h4>Accediendo a objetos anidados</h4>
+                                    <p>Acceder al objeto de un obeto mediante . , en este caso:  myStorage.car.inside["glove box"];</p>
+                                    <p id="valueEj92a"  style="color: blue;"></p>
+                                    <p id="valueEj92b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej92/ej92.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">93</th>
+                        <td>Accediendo a arrays anidados</td>
+                        <td><a class="btn btn-success" id="a93" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js93" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js93">
+                                <td colspan="3">
+                                    <h4>Accediendo a arrays anidados</h4>
+                                    <p>Acceder a array de onjeto en una lista de objetos. En este caso : secondTree = myPlants[1].list[1]</p>
+                                    <p id="valueEj93a"  style="color: blue;"></p>
+                                    <p id="valueEj93b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej93/ej93.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">94</th>
+                        <td><b>Record Collection</b></td>
+                        <td><a class="btn btn-success" id="a94" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js94" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js94">
+                                <td colspan="3">
+                                    <h4>Record Collection</h4>
+                                    <p>Crearemos la función <i>updateRecords</i> a la que pasandole la collecion, el id la prop y el valor actualizaremos su valor propiedad y eliminaremos si no le pasamos un valor: En este caso vamos a añadirle el artista al id:5439</p>
+                                    <p id="valueEj94a"  style="color: blue;"></p>
+                                    <p>updateRecords(recordCollection, 5439, 'artist', 'ABBA')</p>
+                                    <p id="valueEj94b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej94/ej94.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">95</th>
+                        <td>Iteración con while</td>
+                        <td><a class="btn btn-success" id="a95" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js95" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js95">
+                                <td colspan="3">
+                                    <h4>Iteración con while</h4>
+                                    <p>Mientras i sea mayor a 5 va a iterar, debemos acordarnos de actualizar el iterador:</p>
+                                    <p id="valueEj95"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej95/ej95.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">96</th>
+                        <td>Iteración con for</td>
+                        <td><a class="btn btn-success" id="a96" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js96" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js96">
+                                <td colspan="3">
+                                    <h4>Iteración con for</h4>
+                                    <p>Misma funcionalidad que while pero aqui la actualización se hace sola: </p>
+                                    <p id="valueEj96"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej96/ej96.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">97</th>
+                        <td>Iteración con for (impares)</td>
+                        <td><a class="btn btn-success" id="a97" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js97" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js97">
+                                <td colspan="3">
+                                    <h4>Iteración con for (impares)</h4>
+                                    <p>Empezariamos por el 1 y hariamos una actualizacion de condición de i+=2:</p>
+                                    <p id="valueEj97"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej97/ej97.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">98</th>
+                        <td>Conteo hacia atrás con bucle for</td>
+                        <td><a class="btn btn-success" id="a98" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js98" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js98">
+                                <td colspan="3">
+                                    <h4>Conteo hacia atrás con bucle for</h4>
+                                    <p>Empezaríamos por un numero mayor </p>
+                                    <p id="valueEj98"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej98/ej98.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">99</th>
+                        <td>Iterar en un array con for</td>
+                        <td><a class="btn btn-success" id="a99" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js99" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js99">
+                                <td colspan="3">
+                                    <h4>Iterar en un array con for</h4>
+                                    <p>Accederemos al valor de un array aprovechando la iteración del bucle for:</p>
+                                    <p id="valueEj99"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej99/ej99.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">100</th>
+                        <td>Anidamiento de bucles</td>
+                        <td><a class="btn btn-success" id="a100" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js100" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js100">
+                                <td colspan="3">
+                                    <h4>Anidamiento de bucles</h4>
+                                    <p>Accederemos a cada uno de los datos de los arrays dentro del array gracias a la doble iteración:</p>
+                                    <p id="valueEj100a"  style="color: blue;"></p>
+                                    <p id="valueEj100b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej100/ej100.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">101</th>
+                        <td>Iterar con Do while</td>
+                        <td><a class="btn btn-success" id="a101" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js101" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js101">
+                                <td colspan="3">
+                                    <h4>Iterar con Do while</h4>
+                                    <p>Esto nos permite que se ejecute almenos una vez el bucle y después hace la comprobación</p>
+                                    <p id="valueEj101a"  style="color: blue;"></p>
+                                    <p id="valueEj101b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej101/ej101.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">102</th>
+                        <td>Recursividad</td>
+                        <td><a class="btn btn-success" id="a102" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js102" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js102">
+                                <td colspan="3">
+                                    <h4>Recursividad</h4>
+                                    <p>Podemos hacer una función recursiva para que mientras no llegue a una condicion se haga el mismo metodo llamandose a si misma pero actualizamos su valor ya sea + o -: </p>
+                                    <p id="valueEj102"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej102/ej102.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">103</th>
+                        <td><b>Búsqueda de Perfil</b></td>
+                        <td><a class="btn btn-success" id="a103" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js103" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js103">
+                                <td colspan="3">
+                                    <h4>Búsqueda de Perfil</h4>
+                                    <p>Crearemos una función <i>lookUpProfile</i> que mediante el nombre y su propiedad accederemos a sus valores: </p>
+                                    <p id="valueEj103a"  style="color: blue;"></p>
+                                    <p>lookUpProfile("Akira", "likes")</p>
+                                    <p id="valueEj103b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej103/ej103.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">104</th>
+                        <td>Generación de Randoms</td>
+                        <td><a class="btn btn-success" id="a104" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js104" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js104">
+                                <td colspan="3">
+                                    <h4>Generación de Randoms</h4>
+                                    <p>Aplicamos <i>Math.random</i> para la generación: ejecutamos la función <i>randomFraction</i></p>
+                                    <p id="valueEj104"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej104/ej104.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">105</th>
+                        <td>Generación de Randoms enteros.</td>
+                        <td><a class="btn btn-success" id="a105" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js105" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js105">
+                                <td colspan="3">
+                                    <h4>Generación de Randoms enteros.</h4>
+                                    <p>Haremos un <i>Math.floor</i> y hasta el numero que queramos el random lo multiplicaremos * 10 antes: ejecutamos la función: </p>
+                                    <p id="valueEj105"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej105/ej105.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">106</th>
+                        <td>Generación de Randoms enteros entre un rango.</td>
+                        <td><a class="btn btn-success" id="a106" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js106" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js106">
+                                <td colspan="3">
+                                    <h4>Generación de Randoms enteros entre un rango.</h4>
+                                    <p>Lo generaremos restando el mayor por el menor y despues que empieze desde el menor: en este caso le damos desde el 2 al 8</p>
+                                    <p id="valueEj106"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej106/ej106.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">107</th>
+                        <td>Uso de función paseInt.</td>
+                        <td><a class="btn btn-success" id="a107" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js107" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js107">
+                                <td colspan="3">
+                                    <h4>Uso de función paseInt.</h4>
+                                    <p>Convierte un numero de str a int: a la funcion que parsea le pasamos "57":</p>
+                                    <p id="valueEj107"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej107/ej107.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">108</th>
+                        <td>Uso de función paseInt con base Radix.</td>
+                        <td><a class="btn btn-success" id="a108" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js108" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js108">
+                                <td colspan="3">
+                                    <h4>Uso de función paseInt con base Radix.</h4>
+                                    <p>Parsearemos dese una base numerica, en este caso pasaremos de binario a decimal</p>
+                                    <p id="valueEj108"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej108/ej108.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">109</th>
+                        <td>Operador Ternario.</td>
+                        <td><a class="btn btn-success" id="a109" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js109" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js109">
+                                <td colspan="3">
+                                    <h4>Operador Ternario</h4>
+                                    <p>Es como un if else pero para una manera de uso mas rápida. Usamos <i>?</i> si se cumple : si no se cumple. A la función le pasamos 1 y 2 y preguntamos si son iguales:</p>
+                                    <p id="valueEj109"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej109/ej109.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">110</th>
+                        <td>Multiple Operador Ternario.</td>
+                        <td><a class="btn btn-success" id="a110" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js110" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js110">
+                                <td colspan="3">
+                                    <h4>Multiple Operador Ternario.</h4>
+                                    <p>Lo mismo pero si no se cumple volvemos ha hacer otra teranria: eneste caso le preguntamos a nuestra funcion si es + - o zero y le pasamos 10</p>
+                                    <p id="valueEj110"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej110/ej110.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">111</th>
+                        <td>Uso de Recursividad para hacer un Countdown.</td>
+                        <td><a class="btn btn-success" id="a111" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js111" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js111">
+                                <td colspan="3">
+                                    <h4>Uso de Recursividad para hacer un Countdown.</h4>
+                                    <p>Haremos un conteo con una función recursiva la cual si es menor a 1 devuelve el array vacío si no va añadiendo al principio el nuevo valor actualizado volviendo a llamar a la función: en este caso le pasamos el número 10:</p>
+                                    <p id="valueEj111"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej111/ej111.js"></script>
+                            </tr>
+                    <tr>
+                        <th scope="row">112</th>
+                        <td><b>Uso de Recursividad para hacer crear Rango de números.</b></td>
+                        <td><a class="btn btn-success" id="a112" onclick="cambioIcono(this.id)" data-bs-toggle="collapse" href="#js112" aria-expanded="false" aria-controls="collapseExample">Ver</a></td>
+                    </tr>
+
+                            <tr class="collapse table-light" id="js112">
+                                <td colspan="3">
+                                    <h4>Uso de Recursividad para hacer crear Rango de números.</h4>
+                                    <p>Como el ejercicio anterior pero esta vez cambia el resultado si esque los numeros entre ellos es inpar o par por lo cual utilizaremos los módulos.</p>
+                                    <p>rangeOfNumbers(2, 10)</p>
+                                    <p id="valueEj112a"  style="color: blue;"></p>
+                                    <p>rangeOfNumbers(4, 9)</p>
+                                    <p id="valueEj112b"  style="color: blue;"></p>
+                                </td>
+                                <script src="./js/ej112/ej112.js"></script>
+                            </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js/jsIndex.js"></script>
+    </body>
+</html>
